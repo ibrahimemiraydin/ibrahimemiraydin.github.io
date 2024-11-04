@@ -1,178 +1,115 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap');
-
-*{
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    font-family: "Poppins", sans-serif;
-    background-image: url("images/bg2.png") ;
-    background-size: cover;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1f3f40, #99e8f2); /* Degrade arka plan */
+    color: #f1f1f1;
 }
 
 
-.container{
-    margin: auto;  
-}
 
-
-/* header start */
-
-header{
-    height: 100px;
-    border-bottom: 2px solid rgba(51, 51, 51, 0.075);
-}
-
-header nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.322);
-    padding-inline-start: 255px;
-    padding-inline-end: 25px;
-}
-
-header nav .logo a{
-
-    font-size: 32px;
-    color: #ffffffef;
-    text-decoration: none;
-    justify-content: left;
-    text-shadow: 3px 2px 1px #0000008c;
-    background-color: rgba(255, 255, 255, 0.185);
-    padding: 12px 24px;
-    border-radius: 54px;
-}
-
-nav ul{
-    list-style: none;
-    display: flex;
-    column-gap: 50px;
-}
-
-nav ul a{
-    color: white;
-    text-decoration: none;
-    text-shadow: 3px 2px 1px #00000056;
-    transition: color .25s ease;
-}
-
-
-nav ul a:hover{
-    color: #0ba2c0;
-    
-}
-
-nav .menu{
-    display: flex;
-    align-items: center;
-    column-gap: 50px;
-    background-color: rgba(0, 0, 0, 0.103);
-    padding: 10px 20px;
-    border-radius: 54px;
-}
-
-nav .menu .menu-button{
-    color: #0ba2c0;
-    text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.76);
-    padding: 12px 24px;
-    border-radius: 56px;
-    transition: all .25s ease; 
-}
-
-nav .menu .menu-button:hover{
-    background-color: #0ba2c0;    
-    color: white;
-}   
-
-/* header end */
-
-/* section start */
-.content{
-    color: white;
-    height: calc(100vh - 100px);
-    padding-top: 150px;
-}
-
-.content h1{
-    font-size: 60px;
-    text-align: center;
-
-}
-
-.content p{
-    font-size: 24px;
-    text-align: center;  
-    margin-top: 32px; 
-}
-
-.content .links{
+header {
+    background: linear-gradient(135deg, #1f3f40, #99e8f2); /* Degrade arka plan */
+    width: 100%;
+    padding: 20px 0;
+    color: #f1f1f1;
+    position: absolute;
+    top: 0;
     display: flex;
     justify-content: center;
-    margin-top: 48px;
-    column-gap: 16px;
-}  
-
-.content .links a {
-    background-color: rgba(255, 255, 255, 0.384);
-    padding: 20px;
-    width: 280px;
-    color: black;
-    text-align: center;
-    font-size: 18px;
+    align-items: center;
+}
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+header nav ul li {
+    display: inline; 
+    font-size: 1.2em
+}
+header nav ul li a {
+    color: #0d1f30;
+    background: rgba(255, 255, 255, 0.1); /* Şeffaf buton arka planı */
+    border-radius: 10px;
     text-decoration: none;
-    border-radius: 56px;
-    transition: all .25s ease-in;
-}  
-
-.content .links a:hover {
-    background-color: #0ba2c0;
-    color: white;
+    font-size: 1em;
+    transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
+    padding: 10px 15px;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+header nav ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+    z-index: -1;
+}
+header nav ul li a:hover::before {
+    transform: scaleX(1);
+}
+header nav ul li a:active {
+    color: #1e90ff;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+}
+header nav ul li a:hover {
+    color: #1e90ff;
+    transform: scale(1.1);
+}
+.container {
+    text-align: center;
+    border: 1px solid #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #4a4f55;
+    margin-top: 150px;
 }
 
+button { 
+    padding: 10px 20px; 
+    background-color: #87ceeb; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.1s; 
+    font-size: 1.2em; 
+    margin-top: 20px; 
+} 
 
+button:hover { 
+    background-color: #1e90ff; 
+} 
 
-/* section end */
-
-
-/* responsive start */
-    @media(max-width:412px){
-        .container{
-            width: 100%;
-            padding-left: 12px;
-            padding-right: 12px;
-        }
-
-        .content{
-            padding-top: 50px;
-        }
-
-        .content h1{
-            font-size: 36px;
-        }
-        
-        .content p{
-            font-size: 16px;
-        }
-
-        .content .links a{
-            padding: 14px;
-        }
-
-        .content .links{
-            flex-direction: column;
-            align-items: center;
-            row-gap: 1rem;
-        }
-
-        .content .links a{
-            padding: 14px;
-            width: 90%;
-        }
-    }
-
-/* responsive end */
+button:active { 
+    background-color: #1e90ff; 
+    transform: scale(0.95); /* Tıklama anında içeri göçme efekti */ 
+}

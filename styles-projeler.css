@@ -1,0 +1,71 @@
+@import url('styles.css');
+
+.container{
+    background-color: rgba(0, 0, 0, 0.212);
+    height: calc(100vh - 150px); /* Üst bilgi kısmı için yer bırakmak */
+}
+
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 640px; /* Sabit genişlik */
+    background-color: #4a4f55;
+    border-radius: 10px;
+    height: 500px;
+    background-color: transparent;
+}
+.carousel {
+    display: flex;
+    width: 100%;
+    height: calc(100% - 40px); /* Butonlar için alan bırak */
+    justify-content: center;
+    align-items: baseline;
+}
+.slide {
+    display: none;
+    flex: 1;
+    text-align: left;
+    flex-direction: row;
+}
+.slide.active {
+    display: contents;
+    flex-direction: column;
+}
+.slide-image {
+    flex-wrap: wrap;
+    max-width: 40%;
+    margin-right: 20px;
+    margin-top: 20px;
+    align-self: normal;
+}
+
+.slide-image img {
+    width: 100%;
+    border-radius: 10px;
+
+}
+.slide-text {
+    flex: content;
+    max-height: 100%;
+    word-wrap: break-word; /* Yazıyı sarmala */
+    text-align: justify;
+}
+
+.carousel-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 80px;
+}
+.carousel-buttons button {
+    background-color: #1e8fffb7;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.carousel-buttons button:hover {
+    background-color: #1b80a8;
+}
