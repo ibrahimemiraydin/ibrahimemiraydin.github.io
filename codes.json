@@ -1,52 +1,102 @@
 [
     {
         "name": "print",
-        "description": "Prints the specified message or variable to the console.",
-        "code": "print('Hello, World!')"
+        "description": "Belirtilen mesajı veya değişkeni konsola yazdırır.",
+        "code": "print('Merhaba, Dünya!')"
     },
     {
-        "name": "for loop",
-        "description": "Executes a sequence of statements multiple times (one for each item in a collection).",
+        "name": "for döngüsü",
+        "description": "Bir koleksiyonun her bir öğesi için kod bloğunu tekrarlar.",
         "code": "for i in range(5):\n    print(i)"
     },
     {
-        "name": "if statement",
-        "description": "Executes a block of code if a specified condition is true.",
-        "code": "if x > 0:\n    print('Positive number')"
+        "name": "if koşulu",
+        "description": "Belirtilen koşul doğruysa kod bloğunu çalıştırır.",
+        "code": "if x > 0:\n    print('Pozitif sayı')"
     },
     {
-        "name": "list comprehension",
-        "description": "A concise way to create lists based on existing lists with an optional condition.",
+        "name": "liste üreteci",
+        "description": "Mevcut bir listeden koşullu olarak yeni bir liste oluşturmanın kısa bir yoludur.",
         "code": "[x**2 for x in range(10) if x % 2 == 0]"
     },
     {
-        "name": "function",
-        "description": "Defines a reusable block of code that can be called with specific parameters.",
-        "code": "def greet(name):\n    return f'Hello, {name}!'"
+        "name": "fonksiyon",
+        "description": "Belirli parametrelerle çağrılabilen, tekrar kullanılabilir bir kod bloğu tanımlar.",
+        "code": "def selamla(isim):\n    return f'Merhaba, {isim}!'"
     },
     {
-        "name": "dictionary",
-        "description": "A collection of key-value pairs, where keys are unique.",
-        "code": "{'name': 'Alice', 'age': 25, 'city': 'New York'}"
+        "name": "sözlük",
+        "description": "Anahtar-değer çiftlerinden oluşan ve anahtarların benzersiz olduğu bir koleksiyon.",
+        "code": "{'isim': 'Ayşe', 'yaş': 25, 'şehir': 'İstanbul'}"
     },
     {
-        "name": "lambda function",
-        "description": "A small anonymous function defined with lambda, often used for short operations.",
-        "code": "square = lambda x: x**2\nsquare(5)"
+        "name": "lambda fonksiyonu",
+        "description": "Genellikle kısa işlemler için kullanılan, anonim bir küçük fonksiyon tanımlar.",
+        "code": "kare = lambda x: x**2\nkare(5)"
     },
     {
         "name": "try-except",
-        "description": "Handles exceptions that may occur in a block of code.",
-        "code": "try:\n    result = 10 / 0\nexcept ZeroDivisionError:\n    print('Cannot divide by zero')"
+        "description": "Bir kod bloğunda oluşabilecek istisnaları (hataları) yakalar ve işleme alır.",
+        "code": "try:\n    sonuc = 10 / 0\nexcept ZeroDivisionError:\n    print('Bir sayı sıfıra bölünemez')"
     },
     {
-        "name": "class",
-        "description": "Defines a blueprint for creating objects, encapsulating data and behaviors.",
-        "code": "class Person:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n\n    def greet(self):\n        return f'Hello, my name is {self.name}'"
+        "name": "class (sınıf)",
+        "description": "Nesne oluşturmak için bir şablon tanımlar, veri ve davranışları kapsüller.",
+        "code": "class Insan:\n    def __init__(self, isim, yas):\n        self.isim = isim\n        self.yas = yas\n\n    def selamla(self):\n        return f'Merhaba, ben {self.isim}'"
     },
     {
-        "name": "import module",
-        "description": "Imports a module to access its functions and variables.",
+        "name": "modül import etme",
+        "description": "Bir modülü içe aktararak işlevlerini ve değişkenlerini kullanıma açar.",
         "code": "import math\nmath.sqrt(16)"
+    },
+    {
+        "name": "liste",
+        "description": "Birden çok öğeyi bir arada tutan, sıralı ve değiştirilebilir bir veri yapısı.",
+        "code": "[1, 2, 3, 4, 5]"
+    },
+    {
+        "name": "tuple",
+        "description": "Değiştirilemeyen, sıralı bir veri yapısı. Genellikle sabit veri saklamak için kullanılır.",
+        "code": "(1, 2, 3)"
+    },
+    {
+        "name": "set",
+        "description": "Benzersiz öğelerden oluşan sırasız bir koleksiyon.",
+        "code": "{1, 2, 3, 4, 5}"
+    },
+    {
+        "name": "while döngüsü",
+        "description": "Belirtilen koşul doğru olduğu sürece kod bloğunu tekrarlar.",
+        "code": "i = 0\nwhile i < 5:\n    print(i)\n    i += 1"
+    },
+    {
+        "name": "dosya açma",
+        "description": "Bir dosyayı belirli bir modda açar (okuma, yazma, ekleme vb.).",
+        "code": "with open('dosya.txt', 'r') as dosya:\n    icerik = dosya.read()"
+    },
+    {
+        "name": "liste metodları",
+        "description": "Listeler üzerinde işlem yapmaya yarayan yerleşik işlevler.",
+        "code": "liste = [1, 2, 3]\nliste.append(4)\nliste.remove(2)"
+    },
+    {
+        "name": "dictionary metodları",
+        "description": "Sözlükler üzerinde işlem yapmaya yarayan yerleşik işlevler.",
+        "code": "sozluk = {'isim': 'Ali', 'yas': 30}\nsozluk.keys()\nsozluk.values()"
+    },
+    {
+        "name": "map fonksiyonu",
+        "description": "Bir işlevi, belirtilen liste veya koleksiyonun her bir öğesine uygular.",
+        "code": "sayilar = [1, 2, 3, 4]\nkareler = list(map(lambda x: x**2, sayilar))"
+    },
+    {
+        "name": "filter fonksiyonu",
+        "description": "Belirli bir koşulu sağlayan öğeleri seçerek yeni bir liste oluşturur.",
+        "code": "sayilar = [1, 2, 3, 4, 5]\ntekler = list(filter(lambda x: x % 2 != 0, sayilar))"
+    },
+    {
+        "name": "zip fonksiyonu",
+        "description": "Birden fazla listeyi veya koleksiyonu birleştirerek, her bir öğeyi bir tuple haline getirir.",
+        "code": "isimler = ['Ali', 'Veli']\nyaslar = [25, 30]\nlist(zip(isimler, yaslar))"
     }
 ]
