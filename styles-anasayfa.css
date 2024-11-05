@@ -6,10 +6,12 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: calc(100vh - 150px); /* Üst bilgi kısmı için yer bırakmak */
     margin-top: 150px;
+    width: 100%;
+    max-width: 1200px;
     background-color: rgba(0, 0, 0, 0.089);
 }
+
 .fixed-box {
     width: 640px; /* Sabit genişlik */
     text-align: center;
@@ -25,22 +27,25 @@
 
 .projects { 
     width: 100%; 
-    max-width: 800px; 
+    max-width: 1200px; /* Daha geniş bir alan belirliyoruz */
     margin-top: 50px; 
+    padding: 20px; /* İçerik ile kenarlar arasına boşluk ekliyoruz */
 } 
 
 .project-cards { 
     display: flex; 
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: space-around; 
-    gap: 20px; 
+    gap: 20px;
+    width: 100%;
 } 
 
 .project-card { 
     background: rgba(255, 255, 255, 0.1); 
     padding: 20px; 
     border-radius: 10px; 
-    width: 250px; 
+    width: calc(33.33% - 20px); /* 3 kart için genişliği %33.33 olarak ayarlıyoruz */
+    width: 250px; /* Kartın minimum genişliğini ayarlıyoruz */
     text-align: center; 
     transition: transform 0.3s, background-color 0.3s; 
 } 
@@ -86,4 +91,16 @@ h3 {
 
 .button-link:hover { 
     background-color: #1365c4; 
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        width: calc(50% - 20px); /* Ekran küçük olduğunda 2 kart */
+    }
+}
+
+@media (max-width: 480px) {
+    .project-card {
+        width: 100%; /* Mobil ekranlarda 1 kart */
+    }
 }

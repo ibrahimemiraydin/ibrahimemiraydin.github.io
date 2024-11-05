@@ -3,8 +3,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
     font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #1f3f40, #99e8f2); /* Degrade arka plan */
     color: #f1f1f1;
