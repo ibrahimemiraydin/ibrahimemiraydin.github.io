@@ -1,24 +1,52 @@
 [
     {
-        "name": "String",
-        "description": "Python'da string, karakterlerden oluşan bir veri tipidir. Stringler, tek tırnak (' ') veya çift tırnak (' ') içinde tanımlanabilir. "
+        "name": "print",
+        "description": "Prints the specified message or variable to the console.",
+        "code": "print('Hello, World!')"
     },
     {
-        "name": "List",
-        "description": "Listeler, birden fazla veriyi tutabilen, sıralı bir veri yapısıdır. Örneğin: my_list = [1, 2, 3]."
+        "name": "for loop",
+        "description": "Executes a sequence of statements multiple times (one for each item in a collection).",
+        "code": "for i in range(5):\n    print(i)"
     },
     {
-        "name": "Dictionary",
-        "description": "Sözlükler, anahtar-değer çiftleri şeklinde verileri saklayan bir veri yapısıdır. Örneğin: my_dict = {'key': 'value'}."
+        "name": "if statement",
+        "description": "Executes a block of code if a specified condition is true.",
+        "code": "if x > 0:\n    print('Positive number')"
+    },
+    {
+        "name": "list comprehension",
+        "description": "A concise way to create lists based on existing lists with an optional condition.",
+        "code": "[x**2 for x in range(10) if x % 2 == 0]"
+    },
+    {
+        "name": "function",
+        "description": "Defines a reusable block of code that can be called with specific parameters.",
+        "code": "def greet(name):\n    return f'Hello, {name}!'"
+    },
+    {
+        "name": "dictionary",
+        "description": "A collection of key-value pairs, where keys are unique.",
+        "code": "{'name': 'Alice', 'age': 25, 'city': 'New York'}"
+    },
+    {
+        "name": "lambda function",
+        "description": "A small anonymous function defined with lambda, often used for short operations.",
+        "code": "square = lambda x: x**2\nsquare(5)"
+    },
+    {
+        "name": "try-except",
+        "description": "Handles exceptions that may occur in a block of code.",
+        "code": "try:\n    result = 10 / 0\nexcept ZeroDivisionError:\n    print('Cannot divide by zero')"
+    },
+    {
+        "name": "class",
+        "description": "Defines a blueprint for creating objects, encapsulating data and behaviors.",
+        "code": "class Person:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n\n    def greet(self):\n        return f'Hello, my name is {self.name}'"
+    },
+    {
+        "name": "import module",
+        "description": "Imports a module to access its functions and variables.",
+        "code": "import math\nmath.sqrt(16)"
     }
-
-
-
-
-
-
-
-
-
-    
 ]
