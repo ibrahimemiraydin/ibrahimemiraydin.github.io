@@ -1,0 +1,24 @@
+[
+    {
+        "name": "String",
+        "description": "Python'da string, karakterlerden oluşan bir veri tipidir. Stringler, tek tırnak (' ') veya çift tırnak (' ') içinde tanımlanabilir. "
+    },
+    {
+        "name": "List",
+        "description": "Listeler, birden fazla veriyi tutabilen, sıralı bir veri yapısıdır. Örneğin: my_list = [1, 2, 3]."
+    },
+    {
+        "name": "Dictionary",
+        "description": "Sözlükler, anahtar-değer çiftleri şeklinde verileri saklayan bir veri yapısıdır. Örneğin: my_dict = {'key': 'value'}."
+    }
+
+
+
+
+
+
+
+
+
+    
+]

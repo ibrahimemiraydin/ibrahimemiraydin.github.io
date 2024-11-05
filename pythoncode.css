@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    padding: 10px;
+    background-color: #075f9ba6;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center; /* Ortalamak için */
+}
+
+header button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.anasayfabutton{
+    position: absolute;
+    left: 15px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 50%; /* Ortalanmış genişlik */
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 12px;
+    border-radius: 0 5px 5px 0;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease; /* Efekt için */
+}
+
+.search-bar button i {
+    font-size: 18px;
+}
+
+/* Hover ve tıklama efekti */
+.search-bar button:hover {
+    background-color: #005f99; /* Hover rengi */
+}
+
+.search-bar button:active {
+    transform: scale(0.95); /* Tıklama anında küçültme efekti */
+}
+
+.container {
+    text-align: center;
+    max-width: 1600px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.content {
+    display: flex;
+    margin-top: 20px;
+}
+
+.code-name {
+    flex: 0.3; /* Sol alan */
+    background-color: #e7f3fe;
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.code-description {
+    flex: 2; /* Sağ alan */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+#results {
+    margin-top: 20px;
+    text-align: center;
+    flex-direction: column; /* İçerikleri alt alta sıralamak için */
+}
+
+.social-icon {
+    width: 40px; /* Simge boyutunu ayarlar */
+    margin: 0 10px; /* Simgeler arasındaki boşluk */
+    transition: transform 0.3s ease; /* Hover efekt için geçiş */
+}
+  
+.social-icon:hover {
+    transform: scale(1.1); /* Üzerine gelindiğinde büyüme efekti */
+    filter: brightness(1.2); /* Renk parlaklığını artırır */
+}
+  
+.social-link i {
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.801);
+    margin: 0 20px;
+    transition: color 0.3s ease;
+}
+  
+.social-link i:hover {
+    color: #1da1f2; /* Hover için renk değiştir */
+}
+
+.social-media{
+    position: absolute;
+    right: 0px;
+}

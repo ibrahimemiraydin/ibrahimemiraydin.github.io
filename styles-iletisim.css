@@ -41,11 +41,13 @@
     border: 1px solid #ffffff;
     border-radius: 4px;
     box-sizing: border-box;
+    background-color: #ffffff4f;
 }
   
 .contact-section textarea {
     resize: vertical;
     min-height: 100px;
+    color: #000000;
 }
   
 .contact-section button {

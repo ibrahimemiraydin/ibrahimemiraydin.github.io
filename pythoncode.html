@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Kod Rehberi</title>
+    <link rel="stylesheet" href="pythoncode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <button class="geributton" onclick="goBack()">Sıfırla</button>
+        <button class="anasayfabutton" id="anasayfa" onclick="anasayfa()">Ana Sayfa</button>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Python kod arayın...">
+            <button onclick="searchCode()"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/ibrahimemiraydin" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/ibrahimemiraydin" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/emiraydin.16" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/emiraydin1625" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Python Kod Rehberi</h1>
+        <div class="content">
+            <div hidden class="code-name">
+                <h2>Kod ismi</h2>    
+            </div>
+            <div hidden class="code-description">
+                <p>
+                    Açıklaması
+                </p>
+            </div>
+        </div>
+        <div class="search-content" id="results"></div>
+                    <!-- Arama sonuçları burada gösterilecek -->
+    </div>
+
+    <script src="pythoncode.js"></script>
+</body>
+</html>
