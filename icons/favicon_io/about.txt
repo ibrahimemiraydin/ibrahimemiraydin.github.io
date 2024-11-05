@@ -1,6 +1,6 @@
 This favicon was generated using the following font:
 
-- Font Title: ABeeZee
+- Font Title: Heebo
 - Font Author: undefined
-- Font Source: https://fonts.gstatic.com/s/abeezee/v22/esDR31xSG-6AGleN6tKukbcHCpE.ttf
+- Font Source: https://fonts.gstatic.com/s/heebo/v26/NGSpv5_NC0k9P_v6ZUCbLRAHxK1EICucckOnz02SXQ.ttf
 - Font License: undefined)
