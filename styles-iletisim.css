@@ -12,46 +12,57 @@
     border-radius: 10px;
 }
 
-.contact-info, .contact-form, .social-media {
-    width: 100%;
+.contact-section {
     max-width: 600px;
-    margin-bottom: 30px;
-    display: contents;
-}
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-}
-.contact-form label {
-    margin-bottom: 10px;
-    text-align: left;
-}
-.contact-form input, .contact-form textarea {
-    margin-bottom: 20px;
-    padding: 10px;
-    font-size: 1em;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-.contact-form button {
-    padding: 10px 20px;
-    background-color: #1496c9;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    width: fit-content;
     margin: auto;
-}
-.contact-form button:hover {
-    background-color: #1c69ddc5;
-}
-
-.contact-info a { 
-    color: inherit; /* Metin rengi ile aynı */ 
-    text-decoration: none; /* Alt çizgi kaldırıldı */ 
-}
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff1e;
+  }
+  
+  .contact-section h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .contact-section label {
+    display: block;
+    margin-top: 30px;
+    color: #000000;
+    text-align: start;
+  }
+  
+  .contact-section input, 
+  .contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .contact-section textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .contact-section button {
+    width: 100%;
+    padding: 12px;
+    background-color: #317dbb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .contact-section button:hover {
+    background-color: #2569a0;
+  }
 
 .social-media .social-links {
     display: flex;

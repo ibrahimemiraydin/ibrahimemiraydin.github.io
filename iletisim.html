@@ -21,23 +21,20 @@
     </header>
     <div class="container">
         <h1>İletişim</h1>
-        <div class="contact-info">
-            <p>Email: <a href="mailto:emiraydin1625@hotmail.com">emiraydin1625@hotmail.com</a></p>
-            <p>Yukarıdaki <a href="mailto:emiraydin1625@hotmail.com">mail adresimden bana ulaşabilirsiniz</a></p>
-            <p>Adres: Türkiye</p>
-        </div>
-        <div class="contact-form">
-            <h2>Mesaj Gönder</h2>
-            <form action="mailto:emiraydin1625@hotmail.com" method="post" enctype="text/plain">
-                <label for="name">İsim:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Mesaj:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                <button type="submit">Gönder</button>
+        <div class="contact-section">
+            <form id="contactForm">
+              <label for="name">İsim</label>
+              <input type="text" id="name" name="name" placeholder="Adınız" required>
+          
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="Email adresiniz" required>
+          
+              <label for="message">Mesaj</label>
+              <textarea id="message" name="message" placeholder="Mesajınızı yazın" required></textarea>
+          
+              <button type="submit">Gönder</button>
             </form>
-        </div>
+          </div>
         <div class="social-media">
             <h2></h2>
             <div class="social-links">
