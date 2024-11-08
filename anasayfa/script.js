@@ -20,6 +20,7 @@ async function loadComponent(id, url) {
   } catch (error) {
     console.error(`Error fetching ${url}:`, error);
   }
+  
 }
 
 // DOMContentLoaded eventi ile sayfa yüklendikten sonra header ve footer'ı yükleyin
@@ -28,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
   loadComponent("header", "../header_footer/header.html");
   loadComponent("footer", "../header_footer/footer.html");
 });
+
 
 
 

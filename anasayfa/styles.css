@@ -4,7 +4,6 @@ body {
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #1f3f40, #99e8f2); /* Degrade arka plan */
     color: #f1f1f1;
     margin: 0;
     padding: 0;
@@ -20,20 +19,41 @@ body {
     background-color: #f4f4f4;
     text-align: center;
     border-radius: 8px;
-    background-color: #4a4f55;
     margin-top: 150px;
 }
 
 
 header {
-    background: linear-gradient(135deg, #1f3f40, #99e8f2); /* Degrade arka plan */
-    color: #f1f1f1;
+    background-color: rgba(255, 255, 255, 0.9); /* Saydam beyaz */
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
     width: 100%;
-    padding: 20px 0;
-    align-items: center;
-    box-sizing: border-box; /* Kutunun genişliğini doğru hesaplar */
-    margin: 0; /* Marginleri sıfırlıyoruz */
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hafif gölge */
 }
+
+.header-container {
+    display: flex; /* Flexbox ile hizalama */ 
+    justify-content: center; /* Menü öğelerini ortalar */
+    align-items: center; /* Logo ve menü dikeyde ortalanır */
+    margin: 0 auto; /* Header'ı ortalar */
+    position: relative; /* Logo'yu absolute yerleştirebilmek için */
+}
+
+/* Logo */
+header .logo {
+    position: absolute; /* Logo'yu absolute konumlandırıyoruz */
+    left: 20px; /* Sol kenara 20px uzaklık */
+}
+
+header .logo img {
+    width: 100px; /* Logonun genişliğini ayarlayın */
+    height: auto; /* Orantıları koruyarak yüksekliği ayarlar */
+    -webkit-user-select: none;
+    user-select: none;
+}
+
 
 header nav {
     display: flex;
@@ -42,17 +62,14 @@ header nav {
 }
 
 header nav ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    gap: 20px;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 20px;
 }
 
 header nav ul li {
-    display: inline; 
+    display: flex;
     font-size: 1.2em
 }
 
@@ -75,7 +92,6 @@ header nav ul li a {
 }
 
 header nav ul li a::before {
-    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -94,7 +110,6 @@ header nav ul li a:hover::before {
 
 header nav ul li a:active {
     color: #1e90ff;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 header nav ul li a:hover {
