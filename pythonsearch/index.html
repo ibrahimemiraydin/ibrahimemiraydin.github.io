@@ -11,8 +11,8 @@
 </head>
 <body>
     <header>
-        <button class="geributton" onclick="goBack()">Sıfırla</button>
-        <button class="anasayfabutton" id="anasayfa" onclick="anasayfa()">Ana Sayfa</button>
+        <a href="/anasayfa/" class="logo" class="anasayfabutton" id="anasayfa" onclick="anasayfa()"> <img src="/icons/Logos/IEA Logo - Original with Transparent Background.svg" alt="Logo"> </a>
+        <button class="geributton" onclick="goBack()">Temizle</button>
         <div class="search-bar">
             <input type="text" id="searchInput" placeholder="Python kod arayın...">
             <button onclick="searchCode()"><i class="fas fa-search"></i></button>
@@ -26,7 +26,7 @@
     </header>
 
     <div class="container">
-        <h1>Python Kod Rehberi</h1>
+        <h1>Python Kod Arama</h1>
         <div class="content">
             <div hidden class="code-name">
                 <h2>Kod ismi</h2>    
