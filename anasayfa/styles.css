@@ -8,9 +8,6 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 .content{
@@ -155,6 +152,11 @@ footer {
     box-sizing: border-box; /* Padding ve border'ı genişliğe dahil eder */
     position: relative; /* Alt kısımda yer almasını sağlar */
 }
+
+.footer-wrapper {
+    margin-top: 146px; /* Footer üstünde 20px boşluk bırakır */
+}
+
 
 /* Sosyal Medya İkonları */
 .social-icons {

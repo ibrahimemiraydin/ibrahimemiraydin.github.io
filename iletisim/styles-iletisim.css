@@ -6,9 +6,8 @@
     align-items: center;
     text-align: center;
     width: 100%;
-    height: calc(100vh - 150px); /* Üst bilgi kısmı için yer bırakmak */
+    height: calc(100vh - 100px); /* Üst bilgi kısmı için yer bırakmak */
     max-width: 640px; /* Sabit genişlik */
-    background-color: rgba(0, 0, 0, 0.212);
     border-radius: 10px;
 }
 
@@ -16,7 +15,7 @@
     max-width: 600px;
     margin: auto;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: #000000;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     background-color: #ffffff1e;
@@ -50,6 +49,14 @@
     color: #000000;
 }
   
+textarea#message{
+    height: 300px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    
+}input#email,#name{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .contact-section button {
     width: 100%;
     padding: 12px;
@@ -86,7 +93,7 @@
   
 .social-link i {
     font-size: 40px;
-    color: white;
+    color: rgba(28, 94, 194, 0.767);
     margin: 0 54px;
     transition: color 0.3s ease;
 }

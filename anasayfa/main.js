@@ -10,7 +10,7 @@ function createProjectHTML(project) {
                 <h2>${project.title}</h2>
                 <p>${project.description}</p>
                 <div class="buttons">
-                    <button class="btn primary">Learn More</button>
+                    <button class="btn primary" onclick="window.location.href='${project.link}'">Git</button>
                     <button class="btn secondary">View Details</button>
                 </div>
             </div>

@@ -1,112 +1,83 @@
 @import url('/anasayfa/styles.css');
 
-/* Ana Sayfa için özel stiller */
-.container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-    width: 100%;
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Sayfa arkaplan rengi */
+    color: #333;
+    line-height: 1.6;
 }
 
-.fixed-box {
-    width: 640px; /* Sabit genişlik */
-    text-align: center;
-}
-.fixed-box h1 {
-    color: #000000;
-    font-size: 4em; /* Büyük font boyutu */
-    margin-bottom: 20px;
-}
-.fixed-box p {
-    color: #000000;
-    font-size: 1.5em;
-    margin-top: 0;
-}
+/* Proje grid düzeni */ 
+.projects-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Dinamik kolonlar */ 
+    gap: 1.5rem; 
+    padding: 2rem; 
+    max-width: 1200px; 
+    margin: 0 auto; }
 
-h2{
-    color: #000000;
-}
-
-
-.projects { 
-    width: 100%; 
-    max-width: 1200px; /* Daha geniş bir alan belirliyoruz */
-    margin-top: 50px; 
-    padding: 20px; /* İçerik ile kenarlar arasına boşluk ekliyoruz */
-} 
-
-.project-cards { 
-    display: flex; 
-    flex-wrap: wrap;
-    justify-content: space-around; 
-    gap: 20px;
-    width: 100%;
-} 
-
+/* Her proje kartını 3'erli yan yana sıralamak için genişlik ayarı */
 .project-card { 
-    background: rgba(0, 0, 0, 0.158); 
-    padding: 20px; 
-    border-radius: 10px; 
-    width: calc(33.33% - 20px); /* 3 kart için genişliği %33.33 olarak ayarlıyoruz */
-    width: 250px; /* Kartın minimum genişliğini ayarlıyoruz */
-    text-align: center; 
-    transition: transform 0.3s, background-color 0.3s; 
-} 
-
-.project-card:hover { 
-    transform: translateY(-1px);
-    background: rgba(58, 57, 57, 0.699); 
-}
-
-.image-container { 
-    background-color: #b2ebf2; 
-    border-radius: 50%; 
+    background-color: #fff; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     overflow: hidden; 
-    width: 120px; 
-    height: 120px; 
-    margin: 0 auto 20px; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s; 
 }
 
-.image-container img { 
-    width: 100%; 
-    height: auto; 
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 1rem;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0 1rem 1rem;
+}
+
+button {
+    background-color: #007acc;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    margin: 0.5rem;
+}
+
+button:hover {
+    background-color: #005fa3;
 }
 
 
-h3 { 
-    color: #000000; 
-    margin: 20px 0;
-}
 
-.button-link { 
-    display: inline-block; 
-    background-color: #178cda; 
-    color: #ffffff; 
-    border: none; 
-    border-radius: 5px; 
-    padding: 10px 20px; 
-    cursor: pointer; 
-    text-decoration: none; 
-    transition: background-color 0.3s ease; 
-} 
-
-.button-link:hover { 
-    background-color: #1365c4; 
-}
-
-@media (max-width: 768px) {
+/* Dar ekranlarda 2 sütuna düşürme */
+@media (max-width: 900px) {
     .project-card {
-        width: calc(50% - 20px); /* Ekran küçük olduğunda 2 kart */
+        flex: 1 1 calc(50% - 1.5rem); /* 2 sütun */
     }
 }
 
-@media (max-width: 480px) {
+/* Mobil ekranlarda tek sütuna düşürme */
+@media (max-width: 600px) {
     .project-card {
-        width: 100%; /* Mobil ekranlarda 1 kart */
+        flex: 1 1 100%; /* Tek sütun */
     }
 }
