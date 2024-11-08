@@ -14,50 +14,24 @@
         <div id="header"></div>
     </header>
     <div class="container">
-        <h1>Projeler</h1>
-        <div class="carousel-container">
-            <div class="carousel">
-                <div class="slide active">
-                    <div class="slide-image">
-                        <img src="https://epicode.com/wp-content/uploads/2022/08/html-e-css-1.jpg" alt="Proje 1">
-                    </div>
-                    <div class="slide-text">
-                        <h2>Web sitesi tasarlama</h2>
-                        <p>Basitçe bir websitesi tasarlamak için html ve css bilmek yeterlidir. Bunun dışında daha fazla işlevsellik istiyorsanız JavaScript ile daha da fazlasını gerçekleştirebilirsiniz. Benim yapmış olduğum bu projede github'ın bize sunduğu domaini kullanarak bir site oluşturuyorum. Kısaca bu bir portfolye sitesi ve html, css ve javascript kodlarından oluşuyor. Gerçekleştirdiğim bu projenin kaynak kodlarına gitmek için <a href="https://github.com/ibrahimemiraydin/ibrahimemiraydin.github.io">buraya</a> tıklayabilirsiniz.</p>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="slide-image">
-                        <img src="https://media.istockphoto.com/id/1047259374/tr/foto%C4%9Fraf/programlama-kaynak-kodu-arka-plan.jpg?s=612x612&w=0&k=20&c=v0RxqhazMlyROG0S7xu1SlSlXSvktnKyeTpJivJuZLQ=" alt="Proje 2">
-                    </div>
-                    <div class="slide-text">
-                        <h2>Python Temel İşlevler</h2>
-                        <p>Kısa bir süre önce Python öğrenmeye başladım ve öğrenirken yaptığım eğitici çalışmaları bir proje haline getirdim.Bu çalışmaların kaynak kodlarını ve python temel kodlamalarını öğrenmek için <a href="https://github.com/ibrahimemiraydin/Python-Basic-Codes"> burayı</a> ziyaret edebilirsiniz.</p>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="slide-image">
-                        <img src="https://devblogs.microsoft.com/python/wp-content/uploads/sites/12/2018/08/pythonfeature.png" alt="Proje 3">
-                    </div>
-                    <div class="slide-text">
-                        <h2>Python Kodları Kütüphanesi</h2>
-                        <p>Python kodlarının yer aldığı bu sitede , her bir kodun ne işe yaradığını öğrenebilirsiniz. Arama özelliği sayesinde bir kodu arayıp ne ile ilgili olduğuna hızlıca ulaşabilirsiniz.</p>
-                    </div>
-                </div>
-                <!-- Diğer projeler burada -->
-            </div>
-        </div>
-        <div class="carousel-buttons">
-            <button id="prevBtn">&lt;</button>
-            <button id="nextBtn">&gt;</button>
-        </div>
+        <button class="nav-button prev">←</button>
+        
+        <div class="project-container" id="projectContainer"></div>
+
+        <button class="nav-button next">→</button>
     </div>
 
+    <div class="dots" id="dotsContainer"></div>
+
+
+    
     <footer>
         <div id="footer"></div>
     </footer>
 
     <script src="/projeler/carousel.js"></script>
     <script src="/anasayfa/script.js"></script>
+    <script src="carousel.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
